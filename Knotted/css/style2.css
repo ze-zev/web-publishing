@@ -1,0 +1,96 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+  background: #fdfaf7;
+  color: #3c3c3c;
+}
+/* main > visual */
+#visual > div img {
+  width: 100%;
+  vertical-align: top;
+  margin: 0 auto;
+}
+#visual .visual_bg2 {
+  position: relative;
+}
+#visual .visual_bg2 .video {
+  width: 75%;
+  height: 100%;
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#visual .visual_bg2 .video iframe {
+  width: 100%;
+  height: 100%;
+}
+/* main > cake */
+#cake {
+  margin: 100px 0;
+}
+#cake .text {
+  padding: 10px 0;
+}
+#cake .text p {
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 40px;
+}
+#cake .gallery {
+  padding: 50px 200px;
+}
+#cake .gallery .gallery_list {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+#cake .gallery .gallery_list div a img {
+  max-width: 100%;
+  height: auto;
+}
+#cake .gallery .gallery_list div a p {
+  text-align: center;
+  font-size: 15px;
+  padding-top: 5px;
+  font-weight: 700;
+}
+#cake .gallery .gallery_top {
+  margin-bottom: 50px;
+}
+#cake .gallery .gallery_bottom {
+  padding: 0 12.5%;
+}
+/* ===== MOBILE ===== */
+@media screen and (max-width: 767px) {
+  #cake .text {
+    padding: 0 0;
+  }
+  #cake .text p {
+    font-size: 26px;
+    line-height: 26px;
+  }
+  #cake .gallery {
+    padding: 50px 40px;
+  }
+  #cake .gallery .gallery_list {
+    flex-direction: column;
+    gap: 0px;
+  }
+  #cake .gallery .gallery_list div a img {
+    border-radius: 16px;
+  }
+  #cake .gallery .gallery_list div a p {
+    padding-bottom: 40px;
+    font-size: 17px;
+  }
+  #cake .gallery .gallery_top {
+    margin-bottom: 0;
+  }
+  #cake .gallery .gallery_bottom {
+    padding: 0;
+  }
+}
